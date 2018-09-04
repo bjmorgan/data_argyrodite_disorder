@@ -1,0 +1,39 @@
+data_dir: data
+output_dir: outputs
+
+runs: 
+    Li6PS5I/0p: [ 1, 2, 3, 4 ] 
+    Li6PS5I/50p: [ 1, 2, 3, 4, 5 ]
+    Li6PS5I/100p: [ 1, 2, 3, 4 ]
+    Li6PS5Cl/0p: [ 1, 2, 3 ]
+    Li6PS5Cl/50p: [ 1, 2, 3 ]
+    Li6PS5Cl/100p: [ 1, 2, 3 ]
+
+diffusion:
+    inputs: 
+        - actual_XDATCAR
+        - inherent_XDATCAR
+    outputs:
+        - full_structure.cif
+        - Li_density.vasp
+        - diffusion_data.yaml
+        - msd.dat
+
+rdfs:
+    inputs:
+        - inherent_XDATCAR
+    outputs:
+        - rdf.dat
+        - coordination_numbers.dat
+
+sites:
+    inputs:
+        inherent:
+            - inherent_XDATCAR
+        actual:
+            - actual_XDATCAR
+    outputs:
+        inherent:
+            - site_distances_inherent.dat
+        actual:
+            - site_distances_actual.dat

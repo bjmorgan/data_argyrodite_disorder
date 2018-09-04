@@ -1,0 +1,6 @@
+numpy
+pymatgen
+git+git://github.com/materialsvirtuallab/pymatgen-diffusion.git
+git+git://github.com/bjmorgan/polyhedral-analysis.git
+matplotlib
+snakemake
