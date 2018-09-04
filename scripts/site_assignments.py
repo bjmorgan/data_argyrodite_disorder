@@ -53,32 +53,41 @@ def distances_to_sites( structures, ref_structures, species, verbose=True, cores
             a.append(b)
     return distance
 
-
+def write_output( hist, filename, verbose=True ):
+    dr = np.array( list(hist.values())[0][1][1:] )
+    # shift dr to midpoint of bins
+    dr -= ( dr[1] - dr[0] ) / 2.0
+    columns = [ 'r' ]
+    columns.extend( hist.keys() )
+    data = np.array( [ h[0] for h in hist.values() ] )
+    df = pd.DataFrame( np.vstack( ( dr, data ) ).T, columns=columns )
+    if verbose:
+        print( 'Writing to {}'.format( filename ) )
+    df.to_csv( filename, index=False, sep=' ' )
+ 
 def main( trajectory, system, nruns, data_dir, out_dir, 
-          cores=1, bins=200, verbose=True ):
+          cores=1, bins=600, verbose=True ):
     if verbose:
         print( 'trajectory: {}'.format( trajectory ) )
         print( 'system: {}'.format( system ) )
         print( 'nruns: {}'.format( nruns ) )
     ref_structures = { '24g': reference_structure( '{}/reference_structures/Li6PS5I_Neutron.cif'.format( data_dir ),
-                       'Mg', supercell=[2,2,2] ),
+                           'Mg', supercell=[2,2,2] ),
                        '48h': reference_structure( '{}/reference_structures/Li6PS5I_Neutron.cif'.format( data_dir ), 
-                       'Li', supercell=[2,2,2] ) }
+                           'Li', supercell=[2,2,2] ),
+                       '48h*': reference_structure( '{}/reference_structures/Li6PS5I_Neutron_supplemented.cif'.format( data_dir ), 
+                           'Na', supercell=[2,2,2] ) }
     xdatcar_filenames = [ '{}/{}/run{}/{}_XDATCAR.gz'.format( data_dir, system, i, trajectory ) for i in nruns ]
     structures = get_structures( xdatcar_filenames )
-    sites = list(ref_structures.keys())
+    sites = [ [ '24g' ], [ '48h' ], ['48h*'] ]
     distances = {}
     hist = {}
-    for s in sites:
+    for site_list in sites:
         if verbose:
-            print( 'Running distance to sites analysis for sites: {}'.format( s ) )
-        distances[s] = distances_to_sites( structures, [ ref_structures[s] ], 'Li', cores=cores )
-        hist[s] = np.histogram( distances[s], bins=bins, range=(0,2.0), density=True )
-    dr = np.array( hist[sites[0]][1][1:] )
-    data = np.array( [ hist[s][0] for s in sites ] )
-# TODO: correct dr to midpoint of bins
-    df = pd.DataFrame( np.vstack( ( dr, data ) ).T, columns=[ 'r' ] + sites )
+            print( 'Running distance-to-sites analysis for sites: {}'.format( ', '.join( site_list ) ) )
+        distances = distances_to_sites( structures, [ ref_structures[s] for s in site_list ], 'Li', cores=cores )
+        for s, d in zip( site_list, distances ):
+            label = '{} ({})'.format( s, ','.join(site_list) )    
+            hist[label] = np.histogram( distances, bins=bins, range=(0,3.0), density=True )
     filename = '{}/{}/site_distances_{}.dat'.format( out_dir, system, trajectory )
-    if verbose:
-        print( 'Writing to {}'.format( filename ) )
-    df.to_csv( filename, index=False, sep=' ' )
+    write_output( hist=hist, filename=filename, verbose=verbose )
