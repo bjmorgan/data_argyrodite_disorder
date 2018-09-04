@@ -11,8 +11,8 @@ runs:
 
 diffusion:
     inputs: 
-        - actual_XDATCAR
-        - inherent_XDATCAR
+        - actual_XDATCAR.gz
+        - inherent_XDATCAR.gz
     outputs:
         - full_structure.cif
         - Li_density.vasp
@@ -21,7 +21,7 @@ diffusion:
 
 rdfs:
     inputs:
-        - inherent_XDATCAR
+        - inherent_XDATCAR.gz
     outputs:
         - rdf.dat
         - coordination_numbers.dat
@@ -29,9 +29,9 @@ rdfs:
 sites:
     inputs:
         inherent:
-            - inherent_XDATCAR
+            - inherent_XDATCAR.gz
         actual:
-            - actual_XDATCAR
+            - actual_XDATCAR.gz
     outputs:
         inherent:
             - site_distances_inherent.dat

@@ -64,7 +64,7 @@ def main( trajectory, system, nruns, data_dir, out_dir,
                        'Mg', supercell=[2,2,2] ),
                        '48h': reference_structure( '{}/reference_structures/Li6PS5I_Neutron.cif'.format( data_dir ), 
                        'Li', supercell=[2,2,2] ) }
-    xdatcar_filenames = [ '{}/{}/run{}/{}_XDATCAR'.format( data_dir, system, i, trajectory ) for i in nruns ]
+    xdatcar_filenames = [ '{}/{}/run{}/{}_XDATCAR.gz'.format( data_dir, system, i, trajectory ) for i in nruns ]
     structures = get_structures( xdatcar_filenames )
     sites = list(ref_structures.keys())
     distances = {}

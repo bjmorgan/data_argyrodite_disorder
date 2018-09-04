@@ -123,7 +123,7 @@ if __name__ == '__main__':
     rdf_params = { 'sigma': args.sigma,
                    'rmax': args.rmax,
                    'ngrid': args.ngrid }
-    xdatcar_filenames = [ '{}/{}/run{}/inherent_XDATCAR'.format( args.data, args.system, i ) for i in args.nruns ]
+    xdatcar_filenames = [ '{}/{}/run{}/inherent_XDATCAR.gz'.format( args.data, args.system, i ) for i in args.nruns ]
     labels, rdfs = get_rdfs( xdatcar_filenames, 
                              x_spec=args.x_spec, 
                              nprocs=args.nprocs,

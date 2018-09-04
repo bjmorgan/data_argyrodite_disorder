@@ -34,12 +34,12 @@ class Calculation:
         return 'outputs/{}/{}'.format( self.system, self.disorder )
     
     def load_da_inherent( self ):
-        xdatcar_list = [ Xdatcar( f'{self.data_dir}/run{i}/inherent_XDATCAR' ) for i in self.runs ]
+        xdatcar_list = [ Xdatcar( f'{self.data_dir}/run{i}/inherent_XDATCAR.gz' ) for i in self.runs ]
         structures = [ s for xdatcar in xdatcar_list for s in xdatcar.structures ]
         self.da_inherent = DiffusionAnalyzer.from_structures( structures, **da_params )
         
     def load_da_actual( self ):
-        xdatcar_list = [ Xdatcar( f'{self.data_dir}/run{i}/actual_XDATCAR' ) for i in self.runs ]
+        xdatcar_list = [ Xdatcar( f'{self.data_dir}/run{i}/actual_XDATCAR.gz' ) for i in self.runs ]
         structures = [ s for xdatcar in xdatcar_list for s in xdatcar.structures ]
         self.da_actual = DiffusionAnalyzer.from_structures( structures, **da_params )
         
