@@ -1,0 +1,10 @@
+# Li6PS5I 100p [1, 2, 3, 4]
+actual_conductivity: 298.20231996524836
+actual_diffusivity: 3.563186437756138e-06
+actual_max_displacement: 5.2859083560365185
+disorder: 100p
+inherent_conductivity: 309.0666715192598
+inherent_diffusivity: 3.6930033691494944e-06
+inherent_max_displacement: 5.028335808802402
+runs: [1, 2, 3, 4]
+system: Li6PS5I

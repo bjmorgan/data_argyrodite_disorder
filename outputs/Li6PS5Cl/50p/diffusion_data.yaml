@@ -1,0 +1,10 @@
+# Li6PS5Cl 50p [1, 2, 3]
+actual_conductivity: 968.4921854367424
+actual_diffusivity: 1.1368633640282322e-05
+actual_max_displacement: 16.661542510068653
+disorder: 50p
+inherent_conductivity: 971.2003844847721
+inherent_diffusivity: 1.140042380159181e-05
+inherent_max_displacement: 15.094679257292611
+runs: [1, 2, 3]
+system: Li6PS5Cl
