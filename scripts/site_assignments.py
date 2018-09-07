@@ -6,9 +6,8 @@ from polyhedral_analysis.polyhedra_recipe import create_matching_site_generator
 import numpy as np
 import pandas as pd
 import multiprocessing as mp
-
-from .utils import get_structures
 from functools import partial
+from .utils import get_structures
 
 def species_in_structure( structure ):
     return set( [ site.specie.symbol for site in structure ] )
@@ -42,7 +41,7 @@ def distances_to_sites( structures, ref_structures, species, verbose=True, cores
         species (str): Species string for which atoms to analyse from the input Structure objects.
         
     Returns:
-        (list(float)): List of distances in Angstroms.
+        list(list(float)): List of distances in Angstroms.
     """
     pool = mp.Pool(processes=cores)
     distance = [ [] for i in ref_structures ]
@@ -50,7 +49,7 @@ def distances_to_sites( structures, ref_structures, species, verbose=True, cores
     dist = pool.map( p_distances_per_structure, structures )
     for d_frame in dist:
         for a, b in zip( distance, d_frame ):
-            a.append(b)
+            a.extend(b)
     return distance
 
 def write_output( hist, filename, verbose=True ):
@@ -79,7 +78,7 @@ def main( trajectory, system, nruns, data_dir, out_dir,
                            'Na', supercell=[2,2,2] ) }
     xdatcar_filenames = [ '{}/{}/run{}/{}_XDATCAR.gz'.format( data_dir, system, i, trajectory ) for i in nruns ]
     structures = get_structures( xdatcar_filenames )
-    sites = [ [ '24g' ], [ '48h' ], ['48h*'] ]
+    sites = [ [ '24g' ], [ '48h' ], ['48h*'], [ '48h', '48h*' ] ]
     distances = {}
     hist = {}
     for site_list in sites:
@@ -88,6 +87,6 @@ def main( trajectory, system, nruns, data_dir, out_dir,
         distances = distances_to_sites( structures, [ ref_structures[s] for s in site_list ], 'Li', cores=cores )
         for s, d in zip( site_list, distances ):
             label = '{} ({})'.format( s, ','.join(site_list) )    
-            hist[label] = np.histogram( distances, bins=bins, range=(0,3.0), density=True )
+            hist[label] = np.histogram( d, bins=bins, range=(0,3.0), density=True )
     filename = '{}/{}/site_distances_{}.dat'.format( out_dir, system, trajectory )
     write_output( hist=hist, filename=filename, verbose=verbose )
