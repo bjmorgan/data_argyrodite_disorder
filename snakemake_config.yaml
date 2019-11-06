@@ -5,9 +5,15 @@ runs:
     Li6PS5I/0p: [ 1, 2, 3, 4 ] 
     Li6PS5I/50p: [ 1, 2, 3, 4, 5 ]
     Li6PS5I/100p: [ 1, 2, 3, 4 ]
-    Li6PS5Cl/0p: [ 1, 2, 3 ]
-    Li6PS5Cl/50p: [ 1, 2, 3 ]
-    Li6PS5Cl/100p: [ 1, 2, 3 ]
+    Li6PS5Cl/0p: [ 1, 2, 3, 4 ]
+    Li6PS5Cl/50p: [ 1, 2, 3, 4 ]
+    Li6PS5Cl/100p: [ 1, 2, 3, 4 ]
+
+polyhedra:
+    inputs:
+        - inherent_XDATCAR.gz
+    outputs:
+        - trajectory.pickle
 
 diffusion:
     inputs: 

@@ -29,7 +29,7 @@ def count_neighbours( structures, rcut, central_site_species, neighbour_species,
     return neighbour_counts / normalisation_factor
 
 def main( system, nruns, central_species, neighbour_species, max_neighbour_count, rcut ):
-    xdatcar_filenames = [ '{}/{}/run{}/inherent_XDATCAR.gz'.format( data, system, i ) for i in nruns ]
+    xdatcar_filenames = [ f'{data}/{system}/run{i}/inherent_XDATCAR.gz' for i in nruns ]
     structures = get_structures( xdatcar_filenames )
     count = count_neighbours( structures, rcut, central_species, neighbour_species, max_neighbour_count )
     print( count )

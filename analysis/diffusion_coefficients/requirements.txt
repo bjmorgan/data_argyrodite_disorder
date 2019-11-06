@@ -1,0 +1,7 @@
+pandas
+yaml
+numpy
+pymatgen
+pymatgen_diffusion
+jupyter
+matplotlib
