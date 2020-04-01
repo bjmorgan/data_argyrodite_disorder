@@ -201,3 +201,202 @@
 [NotebookApp | INFO] Kernel shutdown: a03aa4b4-d1d3-40e5-9852-882413619da1
 [NotebookApp | WARNING] delete /diffusion_analysis.ipynb
 [NotebookApp | INFO] Adapting to protocol v5.1 for kernel cf16a429-a390-4981-898e-ce8dad2043ca
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | WARNING] 403 POST /api/contents (::1): '_xsrf' argument missing from POST
+[NotebookApp | WARNING] '_xsrf' argument missing from POST
+[NotebookApp | WARNING] 403 POST /api/contents (::1) 56.16ms referer=http://localhost:8861/notebooks/diffusion_analysis.ipynb
+[NotebookApp | WARNING] 403 POST /api/contents (::1): '_xsrf' argument missing from POST
+[NotebookApp | WARNING] '_xsrf' argument missing from POST
+[NotebookApp | WARNING] 403 POST /api/contents (::1) 1.97ms referer=http://localhost:8861/notebooks/diffusion_analysis.ipynb
+[NotebookApp | INFO] Starting buffering for cf16a429-a390-4981-898e-ce8dad2043ca:62c63d8d1a0a4a449cf2d1daa8f3f1b6
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/bjm42/Documents/Work/Projects/Active Projects/argyrodites/4a-4c_disorder/analysis/diffusion_coefficients
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8928/?token=9533cab0cee1323aa71b6938a8daecbe97acd8a8178e0622
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8928/?token=9533cab0cee1323aa71b6938a8daecbe97acd8a8178e0622
+[NotebookApp | INFO] Accepting one-time-token-authenticated connection from ::1
+[NotebookApp | INFO] Creating new notebook in 
+[NotebookApp | INFO] Kernel started: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Kernel started: 4e4df8e7-bdf3-4561-8d1e-6d0ce3ca5888
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 4e4df8e7-bdf3-4561-8d1e-6d0ce3ca5888
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Replaying 4 buffered messages
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Replaying 4 buffered messages
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Replaying 3 buffered messages
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | WARNING] Replacing stale connection: 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Replaying 3 buffered messages
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | WARNING] Replacing stale connection: 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:7ff7bdec3b3f45a98d8fe581664a40ea
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:be01a8e222f846938d99e47f96d0ee3b
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:be01a8e222f846938d99e47f96d0ee3b
+[NotebookApp | INFO] Replaying 3 buffered messages
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:be01a8e222f846938d99e47f96d0ee3b
+[NotebookApp | INFO] Kernel restarted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Restoring connection for 49163f0b-8382-48da-9cf6-c513d504a468:be01a8e222f846938d99e47f96d0ee3b
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Kernel interrupted: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | INFO] Saving file at /lithium densities.ipynb
+[NotebookApp | WARNING] WebSocket ping timeout after 569986 ms.
+[NotebookApp | INFO] Starting buffering for 49163f0b-8382-48da-9cf6-c513d504a468:be01a8e222f846938d99e47f96d0ee3b
+[NotebookApp | WARNING] WebSocket ping timeout after 1262956 ms.
+[NotebookApp | INFO] Starting buffering for 4e4df8e7-bdf3-4561-8d1e-6d0ce3ca5888:64c2fffceef6486e8d2882519a3105e4
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /Users/bjm42/Documents/Work/Projects/Active Projects/argyrodites/4a-4c_disorder/analysis/diffusion_coefficients
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8804/?token=d9492ade46b3926061a028a002fdad79f9ebad8f8079e764
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8804/?token=d9492ade46b3926061a028a002fdad79f9ebad8f8079e764
+[NotebookApp | INFO] Accepting one-time-token-authenticated connection from ::1
+[NotebookApp | INFO] Kernel started: 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Starting buffering for 92acbd67-ca30-45ff-b516-7021438f9346:12d2674321ff4aa08d5d830e4f907464
+[NotebookApp | INFO] Kernel restarted: 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] Restoring connection for 92acbd67-ca30-45ff-b516-7021438f9346:12d2674321ff4aa08d5d830e4f907464
+[NotebookApp | INFO] Replaying 3 buffered messages
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Starting buffering for 92acbd67-ca30-45ff-b516-7021438f9346:12d2674321ff4aa08d5d830e4f907464
+[NotebookApp | INFO] Kernel restarted: 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] Restoring connection for 92acbd67-ca30-45ff-b516-7021438f9346:12d2674321ff4aa08d5d830e4f907464
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Saving file at /diffusion_analysis.ipynb
+[NotebookApp | INFO] Starting buffering for 92acbd67-ca30-45ff-b516-7021438f9346:12d2674321ff4aa08d5d830e4f907464
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 92acbd67-ca30-45ff-b516-7021438f9346
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 2 kernels
+[NotebookApp | INFO] Kernel shutdown: 49163f0b-8382-48da-9cf6-c513d504a468
+[NotebookApp | INFO] Kernel shutdown: 4e4df8e7-bdf3-4561-8d1e-6d0ce3ca5888
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: cf16a429-a390-4981-898e-ce8dad2043ca
