@@ -6,3 +6,4 @@ nohup.out
 **checkpoint.ipynb
 **/.nbgrader.log
 **/ipynb_checkpoints
+**/*.swp
