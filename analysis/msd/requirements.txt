@@ -1,7 +1,7 @@
-pandas
+tqdm
 yaml
 numpy
 pymatgen
-pymatgen_diffusion
+scikit-learn
 jupyter
 matplotlib

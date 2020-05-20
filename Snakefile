@@ -1,23 +1,39 @@
-configfile: 'snakemake_config.yaml'
 from scripts import environment
+import yaml
+import os
 
-runs = config['runs']
-rdf_outputs = config['rdfs']['outputs']
-diffusion_outputs = config['diffusion']['outputs']
-sites_outputs = config['sites']['outputs']['inherent'] + config['sites']['outputs']['actual']
+figures_dir = 'figures'
+analysis_dir = 'analysis'
+data_dir = 'data'
 
-SYSTEMS = runs.keys()
+# analysis notebooks
+notebooks = ['msd/msd_analysis.ipynb']
 
-all_outputs = rdf_outputs + diffusion_outputs + sites_outputs
+# output figures
+figures = ['msd.pdf']
+
+def get_data_files():
+    with open('analysis/md_runs.yaml', 'r') as f:
+        md_runs = yaml.safe_load(f)
+    data_files = []
+    for system in md_runs:
+        for disorder, runs in md_runs[system].items():
+            for i in runs:
+                data_files.append(f'{data_dir}/{system}/{disorder}/run{i}/actual_XDATCAR.gz')
+    return data_files
+
+data_files = get_data_files()
+
+subworkflow msd:
+    workdir:
+        "analysis/msd"
 
 rule all: 
-    input: 
-        expand( 'outputs/{system}/{output}', system=SYSTEMS, output=all_outputs ),
-        'system_info.txt'
-
-include: 'sites.smk'
-include: 'diffusion.smk'
-include: 'rdfs.smk'
+    input:
+       data_files,
+       expand('analysis/{notebook}', notebook=notebooks),
+       'system_info.txt',
+       msd(f'../../{figures_dir}/msd.pdf')
 
 rule environment:
     output: 'system_info.txt'
@@ -25,14 +41,7 @@ rule environment:
 
 rule clean:
     run:
-        for system in SYSTEMS:
-            for output in all_outputs:
-                try:
-                    os.remove( f'outputs/{system}/{output}' )
-                except OSError:
-                    pass
-        try:
-            os.remove( 'system_info.txt' )
-        except:
-            pass
+        for figure in output_figures:
+            shell(f'rm -f {figures_dir}/{figure}')
+        shell('rm -f system_info.txt')
 
