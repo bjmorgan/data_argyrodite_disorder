@@ -6,6 +6,7 @@ from site_analysis.trajectory import Trajectory
 from site_analysis.polyhedral_site import PolyhedralSite
 from site_analysis.tools import get_nearest_neighbour_indices
 import sys
+from collections import Counter
 
 sys.path.insert(0, "../../scripts/")
 from utils import flatten_list
@@ -63,7 +64,7 @@ def map_to_nearest_site(input_structure, species_strings, ref_structure, verbose
         s.coords = ref_structure[index].coords
         assert len(mappings) == len(set(mappings))
     if verbose:
-        print(f"max mapping disp = {max(disp)}")
+        print(f'max mapping disp = {max(disp):.2f} Angstroms')
 
 
 def tetrahedral_site_analysis(structures, x_spec):
