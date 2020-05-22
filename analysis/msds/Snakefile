@@ -3,7 +3,7 @@ import snakemake
 
 data_dir = '../../data'
 figures_dir = '../../figures'
-analysis_notebook = 'msd_analysis.ipynb'
+analysis_notebook = 'msds.ipynb'
 
 def get_data_files():
     with open('../md_runs.yaml', 'r') as f:
@@ -19,7 +19,7 @@ data_files = get_data_files()
 
 output_figures = ['msd.pdf']
 
-rule msd_analysis:
+rule msds:
     input: data_files, analysis_notebook
     output: [f'{figures_dir}/{o}' for o in output_figures]
     log:

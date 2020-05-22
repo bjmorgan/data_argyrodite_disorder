@@ -7,7 +7,7 @@ analysis_dir = 'analysis'
 data_dir = 'data'
 
 # analysis notebooks
-notebooks = ['msd/msd_analysis.ipynb']
+notebooks = ['msds/msds.ipynb']
 
 # output figures
 figures = ['msd.pdf']
@@ -24,24 +24,24 @@ def get_data_files():
 
 data_files = get_data_files()
 
-subworkflow msd:
+subworkflow msds:
     workdir:
-        "analysis/msd"
+        "analysis/msds"
 
 rule all: 
     input:
        data_files,
        expand('analysis/{notebook}', notebook=notebooks),
        'system_info.txt',
-       msd(f'../../{figures_dir}/msd.pdf')
+       msds(f'../../{figures_dir}/msd.pdf')
 
 rule environment:
     output: 'system_info.txt'
-    run: environment.main( output='system_info.txt' )
+    run: environment.main(output='system_info.txt')
 
 rule clean:
     run:
-        for figure in output_figures:
+        for figure in figures:
             shell(f'rm -f {figures_dir}/{figure}')
         shell('rm -f system_info.txt')
 

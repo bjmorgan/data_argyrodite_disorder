@@ -7,3 +7,4 @@ nohup.out
 **/.nbgrader.log
 **/.ipynb_checkpoints
 **/*.swp
+**/.logs

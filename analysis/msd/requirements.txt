@@ -1,7 +1,0 @@
-tqdm
-yaml
-numpy
-pymatgen
-scikit-learn
-jupyter
-matplotlib

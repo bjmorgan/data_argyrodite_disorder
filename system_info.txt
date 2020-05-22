@@ -1,61 +1,235 @@
 # Platform
 
-platform : Linux-4.4.0-128-generic-x86_64-with-debian-jessie-sid
-system   : Linux
-node     : chpc-linux-02
-release  : 4.4.0-128-generic
-version  : #154~14.04.1-Ubuntu SMP Fri May 25 14:58:51 UTC 2018
+platform : Darwin-19.4.0-x86_64-i386-64bit
+system   : Darwin
+node     : MacBookPro.local
+release  : 19.4.0
+version  : Darwin Kernel Version 19.4.0: Wed Mar  4 22:28:40 PST 2020; root:xnu-6153.101.6~15/RELEASE_X86_64
 machine  : x86_64
-processor: x86_64
+processor: i386
 
 # Python Interpreter
 
-Python Version : 3.6.1
-Compiler       : GCC 4.8.4
-Build          : ('default', 'Mar 28 2017 12:11:51')
+Python Version : 3.7.0
+Compiler       : Clang 10.0.0 (clang-1000.10.44.2)
+Build          : ('default', 'Oct  7 2018 18:30:51')
 
 # Frozen Python Modules
 
+adjustText==0.7.3
+-e git+git@github.com:ksyang2013/aimsgb.git@30ad180ee8501b2dc16f0cb245bd26462bca8427#egg=aimsgb
+alabaster==0.7.12
+alembic==1.0.1
 appdirs==1.4.3
-certifi==2018.8.24
+appnope==0.1.0
+-e git+git@gitlab.com:bjmorgan/ase.git@16844a6cfbc1525cadef75023cc44adea0eaa436#egg=ase
+atomicwrites==1.3.0
+attrs==19.1.0
+Babel==2.6.0
+backcall==0.1.0
+-e git+git@github.com:bjmorgan/beagle.git@ad94104b4f443504357aff474fcf9328ff9cd7c2#egg=beagle
+bibtexparser==1.1.0
+biopython==1.73
+black==19.10b0
+bleach==3.0.2
+-e git+git@github.com:bjmorgan/bsym.git@f381c068851a46a289815924f1513c7f56a0f71f#egg=bsym
+certifi==2018.10.15
 chardet==3.0.4
+-e git+git@github.com:bjmorgan/clease-mc.git@9fd58745e8cf7a72c900cb4f2abdf9a7f3e1bff3#egg=clease_mc
+Click==7.0
+cloudpickle==1.2.1
 codeclimate-test-reporter==0.2.3
+colorama==0.4.1
+commonmark==0.9.1
 ConfigArgParse==0.13.0
 coverage==4.3.4
+coveralls==1.6.0
+crystal-torture==1.0.8
 cycler==0.10.0
+Cython==0.29.7
+dask==2.3.0
 datrie==0.7.1
+ddt==1.2.1
 decorator==4.3.0
+defusedxml==0.5.0
+dill==0.2.9
+docopt==0.6.2
+docstr-coverage==1.0.5
 docutils==0.14
+doi2cff==1.0.0
+dynesty==1.0.0
+# Editable install with no version control (effmass==1.1.0)
+-e /Users/bjm42/.pyenv/versions/3.7.0/lib/python3.7/site-packages
+emcee==3.0.2
+entrypoints==0.2.3
+f90wrap==0.2.1
+Flask==1.0.2
+fortranformat==0.2.5
+freud-analysis==1.2.2
+fsspec==0.4.3
+future==0.17.1
+gitdb2==2.0.5
+GitPython==2.1.11
+graphviz==0.12
+GridDataFormats==0.4.1
+-e git+git@github.com:glotzerlab/gsd.git@7d50644450536f96b0a16a19da3bba8374c5fbc2#egg=gsd
+h5py==2.9.0
 idna==2.7
+imageio==2.5.0
+imagesize==1.1.0
+ipykernel==5.1.0
+ipython==7.0.1
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
+itsdangerous==1.1.0
+jedi==0.13.1
+Jinja2==2.10
+joblib==0.13.2
 jsonschema==2.6.0
+jupyter==1.0.0
+jupyter-client==5.2.3
+jupyter-console==6.0.0
+jupyter-contrib-core==0.3.3
+jupyter-core==4.4.0
+jupyter-nbextensions-configurator==0.4.1
+jupyter-sphinx==0.2.3
+-e git+git@github.com:bjmorgan/kinisi.git@085b6aa19d29c29e39329bf3a656342098332a61#egg=kinisi
+Kivy==1.11.1
+Kivy-Garden==0.1.4
 kiwisolver==1.0.1
+lammps===12Dec2018
+lammps-cython==0.5.8
 latexcodec==1.0.5
-matplotlib==2.2.3
-monty==1.0.3
+-e git+git@github.com:bjmorgan/lattice_mc.git@00e79b9800e5923512e3a1e112020adf2789c8f7#egg=lattice_mc
+llvmlite==0.29.0
+locket==0.2.0
+Mako==1.0.7
+MarkupSafe==1.0
+matplotlib==3.2.0rc1
+-e git+git@github.com:MDAnalysis/mdanalysis.git@da5f93428f576f95379e4e971c5ca71815fbdfd5#egg=MDAnalysis&subdirectory=package
+mistune==0.8.4
+mmtf-python==1.1.2
+mock==2.0.0
+monty==3.0.2
+more-itertools==7.0.0
+mpi4py==3.0.1
 mpmath==1.0.0
-networkx==2.1
-numpy==1.15.1
+msgpack==0.6.1
+multiprocess==0.70.7
+mypy==0.740
+mypy-extensions==0.4.3
+nameparser==1.0.3
+nbconvert==5.6.1
+nbdime==1.1.0
+nbformat==4.4.0
+nbgrader==0.5.4
+nbsphinx==0.4.2
+networkx==2.2
+nglview==2.7.1
+nose==1.3.7
+notebook==5.7.0
+numba==0.44.1
+numpy==1.18.3
+numpydoc==0.8.0
+p-tqdm==1.2
+packaging==19.0
 palettable==3.1.1
 pandas==0.23.4
-pip==18.0
-polyhedral-analysis==0.1
+pandocfilters==1.4.2
+parso==0.3.1
+partd==1.0.0
+pathos==0.2.3
+pathspec==0.7.0
+pbr==5.1.3
+periodictable==1.5.2
+pexpect==4.6.0
+pickleshare==0.7.5
+Pillow==6.1.0
+Pint==0.11
+pip==20.1.1
+pkginfo==1.4.2
+pluggy==0.11.0
+-e git+git@github.com:bjmorgan/polyhedral-analysis.git@94d2bdf4c849ee93926f9ebeffde62af0947c04f#egg=polyhedral_analysis
+pox==0.2.5
+ppft==1.6.4.9
+prometheus-client==0.4.2
+prompt-toolkit==2.0.3
+psutil==5.7.0
+ptyprocess==0.6.0
+-e git+git@github.com:elcorto/pwtools.git@65a31fbc5edabf6157a9a47681eedbb94750c7e7#egg=pwtools
+py==1.8.0
+-e git+git@github.com:bjmorgan/py-sc-fermi.git@1fd6ed3105ba780724bdd7d7f195936919a133c2#egg=py_sc_fermi
 pybtex==0.21
+PyCifRW==4.4.1
 PyDispatcher==2.0.5
-pymatgen==2018.9.1
-pymatgen-diffusion==2018.1.4
-pyparsing==2.2.0
+Pygments==2.2.0
+-e git+git@github.com:bjmorgan/pymatgen.git@4d9bfd9915b818cf61113e9402112c302a958aae#egg=pymatgen
+-e git+git@github.com:materialsvirtuallab/pymatgen-diffusion.git@02ad77e2101193f7217932546031d6389dd1b335#egg=pymatgen_diffusion
+Pympler==0.8
+pyparsing==2.2.2
+-e git+git@github.com:bjmorgan/pyscses.git@12aa200b560a5778aac7e65af62e50f404f0c847#egg=pyscses
+pyspglib==1.8.3.1
+pytest==4.5.0
+pytest-lazy-fixture==0.5.2
 python-dateutil==2.7.3
+python-editor==1.0.3
+pytim==0.8.1
 pytz==2018.5
-PyYAML==3.13
+pyvoro==1.3.2
+PyWavelets==1.0.3
+PyYAML==5.2
+pyzmq==17.1.2
+qtconsole==4.4.2
 ratelimiter==1.2.0.post0
+readme-renderer==24.0
+recommonmark==0.6.0
+regex==2020.2.20
 requests==2.19.1
-ruamel.yaml==0.15.64
-scipy==1.1.0
-setuptools==28.8.0
+requests-toolbelt==0.8.0
+rise==5.4.1
+ruamel.yaml==0.15.74
+scikit-image==0.15.0
+scikit-learn==0.20.3
+scipy==1.4.1
+seaborn==0.9.0
+Send2Trash==1.5.0
+setuptools==41.0.1
+simplegeneric==0.8.1
+-e git+git@github.com:bjmorgan/site-analysis.git@e26ba4742afbf31820d7b7d17fc93dff40c6e8c2#egg=site_analysis
 six==1.11.0
-snakemake==5.2.2
+sklearn==0.0
+smmap2==2.0.5
+snakemake==5.17.0
+snakeviz==2.0.1
+snowballstemmer==1.2.1
 spglib==1.10.4.11
-sympy==1.2
+Sphinx==1.8.4
+sphinx-rtd-theme==0.4.2
+sphinxcontrib-websupport==1.1.0
+SQLAlchemy==1.2.12
+-e git+git@github.com:bjmorgan/SurfinPy.git@501a9420f2e24362fcad45a517a1cbcea6750b38#egg=surfinpy
+sympy==1.3
 tabulate==0.8.2
+terminado==0.8.1
+testpath==0.4.2
+toml==0.10.0
+toolz==0.10.0
+toposort==1.5
+tornado==5.1.1
+tqdm==4.46.0
+traitlets==4.3.2
+twine==1.12.1
+typed-ast==1.4.0
+typing-extensions==3.7.4.1
+uncertainties==3.1.2
+uravu==0.0.7
 urllib3==1.23
+-e git+git@github.com:bjmorgan/vasppy.git@a92a56e109c395910c52c556f9d5a2f9e6aa5ee4#egg=vasppy
+version-information==1.0.3
+vg==1.0.0
+wcwidth==0.1.7
+webencodings==0.5.1
+Werkzeug==0.15.0
+wheel==0.32.2
+widgetsnbextension==3.5.1
 wrapt==1.10.11

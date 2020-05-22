@@ -1,0 +1,4 @@
+yaml
+jupyter
+matplotlib
+kinisi
