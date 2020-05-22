@@ -7,10 +7,12 @@ analysis_dir = 'analysis'
 data_dir = 'data'
 
 # analysis notebooks
-notebooks = ['msds/msds.ipynb']
+notebooks = ['msds/msds.ipynb',
+             'strings/strings.ipynb']
 
 # output figures
-figures = ['msd.pdf']
+figures = ['msd.pdf',
+           'string_populations.pdf']
 
 def get_data_files():
     with open('analysis/md_runs.yaml', 'r') as f:
@@ -28,12 +30,17 @@ subworkflow msds:
     workdir:
         "analysis/msds"
 
+subworkflow strings:
+    workdir:
+        "analysis/strings"
+
 rule all: 
     input:
        data_files,
        expand('analysis/{notebook}', notebook=notebooks),
        'system_info.txt',
-       msds(f'../../{figures_dir}/msd.pdf')
+       msds(f'../../{figures_dir}/msd.pdf'),
+       strings(f'../../{figures_dir}/string_populations.pdf')
 
 rule environment:
     output: 'system_info.txt'

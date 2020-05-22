@@ -2,7 +2,7 @@
 
 platform : Darwin-19.4.0-x86_64-i386-64bit
 system   : Darwin
-node     : MacBookPro.local
+node     : MacBookPro
 release  : 19.4.0
 version  : Darwin Kernel Version 19.4.0: Wed Mar  4 22:28:40 PST 2020; root:xnu-6153.101.6~15/RELEASE_X86_64
 machine  : x86_64
