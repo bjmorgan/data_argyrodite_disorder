@@ -8,11 +8,14 @@ data_dir = 'data'
 
 # analysis notebooks
 notebooks = ['msds/msds.ipynb',
-             'strings/strings.ipynb']
+             'strings/strings.ipynb',
+             'rdfs/rdfs.ipynb']
 
 # output figures
 figures = ['msd.pdf',
-           'string_populations.pdf']
+           'string_populations.pdf',
+           'X-Li-coordination_numbers.pdf',
+           'X-Li-rdf.pdf']
 
 def get_data_files():
     with open('analysis/md_runs.yaml', 'r') as f:
@@ -29,10 +32,20 @@ data_files = get_data_files()
 subworkflow msds:
     workdir:
         "analysis/msds"
+    snakefile:
+        "analysis/msds/msds.smk"
 
 subworkflow strings:
     workdir:
         "analysis/strings"
+    snakefile:
+        "analysis/strings/strings.smk"
+
+subworkflow rdfs:
+    workdir:
+        "analysis/rdfs"
+    snakefile:
+        "analysis/rdfs/rdfs.smk"
 
 rule all: 
     input:
@@ -40,7 +53,9 @@ rule all:
        expand('analysis/{notebook}', notebook=notebooks),
        'system_info.txt',
        msds(f'../../{figures_dir}/msd.pdf'),
-       strings(f'../../{figures_dir}/string_populations.pdf')
+       strings(f'../../{figures_dir}/string_populations.pdf'),
+       rdfs(f'../../{figures_dir}/X-Li-rdf.pdf'),
+       rdfs(f'../../{figures_dir}/X-Li-coordination_numbers.pdf')
 
 rule environment:
     output: 'system_info.txt'
