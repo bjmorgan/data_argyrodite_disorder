@@ -1,4 +1,4 @@
-# Data analysis for &lqduo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites
+# Data analysis for &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites
 
 TODO
 
