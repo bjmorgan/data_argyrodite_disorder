@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 
-from pymatgen.io.vasp import Xdatcar, Structure, Lattice
-from pymatgen_diffusion.aimd.van_hove import RadialDistributionFunction
+from pymatgen.io.vasp import Xdatcar
+from pymatgen import Structure, Lattice
 from polyhedral_analysis.polyhedra_recipe import create_matching_site_generator
 import numpy as np
 import pandas as pd
