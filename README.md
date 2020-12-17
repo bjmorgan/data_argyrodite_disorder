@@ -18,6 +18,8 @@ pip install -r requirements.txt
 
 TODO: note that this should ideally be in a clean python environment, e.g. using virtualenv.
 
+Note: The analysis uses [`crystal-torture`](https://crystal-torture.readthedocs.io) which requires a fortran compiler is installed.
+
 ## Runtime environment and frozen dependencies
 Details about the runtime environement and the versions of installed python modules used in the original analysis are saved to `system_info.txt`
 

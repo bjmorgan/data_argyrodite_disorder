@@ -1,0 +1,6 @@
+pyamtgen
+numpy
+pyyaml
+matplotlib
+jupyter
+version_information

@@ -105,7 +105,7 @@ def tetrahedral_site_analysis(structures, x_spec):
     trajectory = Trajectory(atoms=atoms, sites=sites)
     assert trajectory.site_collection.sites_contain_points(points=t_all.frac_coords, 
                structure=md_structure)
-    trajectory.trajectory_from_structures(structures, progress="notebook")
+    trajectory.trajectory_from_structures(structures, progress=True)
     return trajectory
 
 

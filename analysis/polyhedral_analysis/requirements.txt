@@ -1,0 +1,6 @@
+pymatgen
+tqdm
+numpy
+pyyaml
+polyhedral_analysis
+version_information

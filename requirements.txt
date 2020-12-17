@@ -1,6 +1,9 @@
-numpy
-pymatgen
-git+git://github.com/materialsvirtuallab/pymatgen-diffusion.git
-git+git://github.com/bjmorgan/polyhedral-analysis.git
-matplotlib
 snakemake
+version_information
+-r analysis/msds/requirements.txt
+-r analysis/polyhedral_analysis/requirements.txt
+-r analysis/strings/requirements.txt
+-r analysis/rdfs/requirements.txt
+-r analysis/tetrahedral_site_analysis/requirements.txt
+-r analysis/inherent_structures/requirements.txt
+

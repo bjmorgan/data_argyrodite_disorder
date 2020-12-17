@@ -9,13 +9,27 @@ data_dir = 'data'
 # analysis notebooks
 notebooks = ['msds/msds.ipynb',
              'strings/strings.ipynb',
-             'rdfs/rdfs.ipynb']
+             'rdfs/rdfs.ipynb',
+             'tetrahedral_site_analysis/tetrahedral_site_occupations.ipynb',
+             'tetrahedral_site_analysis/tetrahedral_site_transition_probabilities.ipynb',
+             'tetrahedral_site_analysis/tetrahedral_site_positions.ipynb',
+             'tetrahedral_site_analysis/inherent_structure_site_comparison.ipynb',
+             'polyhedral_analysis/polyhedral_classification.ipynb',
+             'polyhedral_analysis/polyhedral_dynamics.ipynb',
+             'inherent_structures/inherent_structure_comparison.ipynb']
 
 # output figures
 figures = ['msd.pdf',
            'string_populations.pdf',
            'X-Li-coordination_numbers.pdf',
-           'X-Li-rdf.pdf']
+           'X-Li-rdf.pdf',
+           'tetrahedral_site_populations.pdf',
+           'transition_matrices.pdf',
+           'site_rdf.pdf',
+           'polyhedra_types.pdf',
+           'Li6PS5I_octahedral_projection.pdf',
+           'inherent_vs_actual_sites_comparison.pdf',
+           'raw_vs_inherent_trajectory.pdf']
 
 def get_data_files():
     with open('analysis/md_runs.yaml', 'r') as f:
@@ -47,6 +61,24 @@ subworkflow rdfs:
     snakefile:
         "analysis/rdfs/rdfs.smk"
 
+subworkflow tetrahedral_sites:
+    workdir:
+        "analysis/tetrahedral_site_analysis"
+    snakefile:
+        "analysis/tetrahedral_site_analysis/tetrahedral_sites.smk"
+
+subworkflow polyhedral_analysis:
+    workdir:
+        "analysis/polyhedral_analysis"
+    snakefile:
+        "analysis/polyhedral_analysis/polyhedra.smk"
+
+subworkflow inherent_structures:
+    workdir:
+        "analysis/inherent_structures"
+    snakefile:
+        "analysis/inherent_structures/inherent_structures.smk"
+
 rule all: 
     input:
        data_files,
@@ -55,7 +87,14 @@ rule all:
        msds(f'../../{figures_dir}/msd.pdf'),
        strings(f'../../{figures_dir}/string_populations.pdf'),
        rdfs(f'../../{figures_dir}/X-Li-rdf.pdf'),
-       rdfs(f'../../{figures_dir}/X-Li-coordination_numbers.pdf')
+       rdfs(f'../../{figures_dir}/X-Li-coordination_numbers.pdf'),
+       tetrahedral_sites(f'../../{figures_dir}/tetrahedral_site_populations.pdf'),
+       tetrahedral_sites(f'../../{figures_dir}/transition_matrices.pdf'),
+       tetrahedral_sites(f'../../{figures_dir}/site_rdf.pdf'),
+       tetrahedral_sites(f'../../{figures_dir}/inherent_vs_actual_sites_comparison.pdf'),
+       polyhedral_analysis(f'../../{figures_dir}/polyhedra_types.pdf'),
+       polyhedral_analysis(f'../../{figures_dir}/Li6PS5I_octahedral_projection.pdf',
+       inherent_structures(f'../../{figures_dir)/raw_versus_inherent_trajectory.pdf')
 
 rule environment:
     output: 'system_info.txt'

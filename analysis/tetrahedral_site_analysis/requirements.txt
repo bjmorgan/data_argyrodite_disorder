@@ -1,0 +1,8 @@
+version-information
+pyyaml
+pymatgen
+tqdm
+numpy
+site-analysis
+matplotlib
+crystal-torture
