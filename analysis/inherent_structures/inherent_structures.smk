@@ -9,11 +9,12 @@ def get_data_files():
     with open('../md_runs.yaml', 'r') as f:
         md_runs = yaml.safe_load(f)
     data_files = []
-    system = 'Li6PS5I'
-    disorder = '0p'
-    for i in md_runs[system][disorder]:
-        data_files.append(f'{data_dir}/{system}/{disorder}/run{i}/inherent_XDATCAR.gz')
-        data_files.append(f'{data_dir}/{system}/{disorder}/run{i}/actual_XDATCAR.gz')
+    to_get = {'Li6PS5I': '0p',
+              'Li6PS5Cl': '50p'}
+    for system, disorder in to_get.items():
+        for i in md_runs[system][disorder]:
+            data_files.append(f'{data_dir}/{system}/{disorder}/run{i}/inherent_XDATCAR.gz')
+            data_files.append(f'{data_dir}/{system}/{disorder}/run{i}/actual_XDATCAR.gz')
     return data_files
  
 data_files = get_data_files()
