@@ -1,5 +1,7 @@
 # Data analysis for &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites&rdquo;
 
+[![DOI](https://zenodo.org/badge/252124312.svg)](https://zenodo.org/badge/latestdoi/252124312)
+
 Authors:
 - Benjamin J. Morgan ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
 
