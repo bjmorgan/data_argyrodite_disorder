@@ -1,4 +1,4 @@
-# Data analysis for &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites
+- Data analysis for &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites
 
 Authors:
 - Benjamin J. Morgan ORCID [0000-0002-3056-8233](https://orcid.org/0000-0002-3056-8233)
@@ -36,7 +36,7 @@ The analysis workflow has the following Python module dependencies:
 - [kinisi](https://pypi.org/project/kinisi/)
 - [matplotlib](https://pypi.org/project/matplotlib/)
 - [numpy](https://pypi.org/project/numpy/)
-- [polyhedral_analysis](https://pypi.org/project/polyhedral-analysis/)
+- [polyhedral-analysis](https://pypi.org/project/polyhedral-analysis/)
 - [pymatgen](https://pypi.org/project/pymatgen/)
 - [pyyaml](https://pypi.org/project/PyYAML/)
 - [site-analysis](https://pypi.org/project/site-analysis/)
