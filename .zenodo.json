@@ -1,0 +1,32 @@
+{
+  "title": "Data analysis for “Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li6PS5X Argyrodites”",
+  "creators": [{
+      "name": "Morgan, Benjamin J.",
+      "affiliation": "Department of Chemistry, University of Bath, Claverton Down, Bath, BA2 7AY, UK.",
+      "orcid": "0000-0002-3056-8233"
+  }],
+  "description": "This repository contains a series of Jupyter notebooks used for the data analysis described in Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li6PS5X Argyrodites",
+  "access_right": "open",
+  "license": "MIT",
+  "grants": [{
+      "code": "UF130329",
+      "funder": "The Royal Society"
+  },{
+      "code": "URF\R\191006",
+      "funder": "The Royal Society"
+  },{
+      "code": "FIRG003",
+      "funder": "The Faraday Institution"
+  },{
+      "code": "EP/L000202",
+      "funder": "EPSRC"
+  }],
+  "related_identifiers": [
+      {
+          "scheme": "url", 
+          "identifier": "https://github.com/bjmorgan/data_argyrodite_disorder",
+          "relation": "isSupplementTo"
+      }
+    ],
+  "upload_type": "dataset"
+}
