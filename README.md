@@ -7,7 +7,7 @@ Authors:
 
 ## Summary
 
-This repository contains a series of Jupyter notebooks used for the data analysis described in &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites&rdquo; ([DOI:10.1021/acs.chemmater.0c03738](https://doi.org/10.1021/acs.chemmater.0c03738)).
+This repository contains a series of Jupyter notebooks used for the data analysis described in &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites&rdquo; ([10.1021/acs.chemmater.0c03738](https://doi.org/10.1021/acs.chemmater.0c03738)).
 
 The dataset contains raw simulation data (VASP XDATCAR files) from a series of <i>ab initio</i> molecular dynamics simulations on Li<sub>6</sub>PS<sub>5</sub><i>X</i> argyrodites, and Jupyter notebooks containing code to process these data to produce the relevant manuscript figures.
 
