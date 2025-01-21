@@ -7,11 +7,11 @@ Authors:
 
 ## Summary
 
-This repository contains a series of Jupyter notebooks used for the data analysis described in &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites&rdquo; (awaiting DOI).
+This repository contains a series of Jupyter notebooks used for the data analysis described in &ldquo;Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li<sub>6</sub>PS<sub>5</sub><i>X</i> Argyrodites&rdquo; ([DOI:10.1021/acs.chemmater.0c03738](https://doi.org/10.1021/acs.chemmater.0c03738)).
 
 The dataset contains raw simulation data (VASP XDATCAR files) from a series of <i>ab initio</i> molecular dynamics simulations on Li<sub>6</sub>PS<sub>5</sub><i>X</i> argyrodites, and Jupyter notebooks containing code to process these data to produce the relevant manuscript figures.
 
-The full DFT dataset, including all DFT inputs and outputs is available at [TODO]().
+The full DFT dataset, including all DFT inputs and outputs is available at the [University of Bath Research Data Archive](https://doi.org/10.15125/BATH-00814).
 
 To run the complete data analysis, run the following commands from the top level directory:
 ```
